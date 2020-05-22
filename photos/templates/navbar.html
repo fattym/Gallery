@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+<div class="sidenav">
+    <form class="navbar-form" role="search" action="{% url 'search_results' %}" METHOD="GET">
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Item" name="image">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">Go
+                </button>
+            </div>
+        </div>
+
+    </form>
+    <a class="nav-link text-white" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="{% url 'search_by_location' %}">Wuhan</a>
+        <a class="dropdown-item" href="{% url 'search_by_location' %}">Turkey</a>
+        <a class="dropdown-item" href="{% url 'search_by_location' %}">Zuri</a>
+    </div>
+  </div>
+  
