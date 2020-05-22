@@ -1,6 +1,10 @@
 # Gallery-Inn
 
 ## Author
+#### By:
+1. Joseph Nganga ; lead developer
+1. Moringa TM's ; Mentors
+1. Moringa Students ; Assistant designers
 
 ### Description  
 This is an application that enables users to view different categories of images per locations and also able to copy the link and share it to other friends
@@ -16,7 +20,7 @@ To get the project .......
 | --------- | ------| ------ |
 |On loading the app you see the landing page with a navbar at the left| Clicking `search`| You are redirected to the homepage if you had left the page or just loads the homepage again if you are still on the homepage|
 |Clicking the `Locations` link on the navbar | Mouse click |Displays a drop-down menu for `Kisumu`, `Mombasa` and `Nakuru` locations.
-|Clicking the `Kenya`,`United States` or `Italy`links from the drop-down menu | Mouse click | Redirects a page where you can view various photos from the location that you selected|
+|Clicking the `Kenya`,`kisumu` or `Nakuru`links from the drop-down menu | Mouse click | Redirects a page where you can view various photos from the location that you selected|
 |Clicking the `Today's Images` link | Mouse click | Redirects to a page where you can view images of today|
 |Clicking any image| Mouse click | A modal opens with the details of the image including the image itself.|
   
@@ -65,14 +69,17 @@ Open the application on your browser `127.0.0.1:8000`.
   
 ## Known Bugs  
 * There are no known bugs currently,though i encountered many of it during deployment,but i finally managed 
-  
-## Contact Information   
-If you have any question or contributions, please email me at [chepkiruibetty64@gmail.com] 
+## Support and contact details
+call me on
 
-## Codebeat
- [![codebeat badge](https://codebeat.co/badges/c353b381-11bd-47dd-9da3-18e5fedd358e)](https://codebeat.co/projects/github-com-chepkiruibetty-gallery-inn-master)
+<img src="https://bit.ly/2H4L6UZ" width="109" style="border-radius:50%;">:0798734442
 
+<img src="https://bit.ly/383xk0Z" width="109" style="border-radius:50%;">:0778378174
+ 
+ <img src="https://bit.ly/2Smueyp" width="109" style="border-radius:50%;">:nungari100@gmail.com
 
 ## License
 
-- Licensed under[MIT license](license).
+[MIT License](LICENSE.md)
+Copyright (c) [2020] [Joseph Nganga]
+</a>
