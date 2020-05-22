@@ -1,4 +1,4 @@
-# Gallery-Inn
+# Tambua Kenya
 
 ## Author
 #### By:
