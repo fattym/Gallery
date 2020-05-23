@@ -3,12 +3,13 @@ from django.views.generic import ListView,TemplateView
 from django.db.models import Q
 
 
-from .models import Images
+from .models import Images,Location,Category
 
 # Create your views here.
 def home(request):
     images= Images.objects.all()
-    return render(request, "home.html", {"images":images})
+    category= Category.objects.all()
+    return render(request, "home.html", {"images":images,"category":category})
 
 
 
