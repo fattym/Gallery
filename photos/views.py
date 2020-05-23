@@ -37,4 +37,7 @@ class SearchLocationListView(ListView):
 
 
 
-
+def get_location(request):
+    locations = Location.objects.all()
+   
+    return render(request,'all-photos/locations.html',{'all_images':location_result,'category_results':category_results,'locations':locations})

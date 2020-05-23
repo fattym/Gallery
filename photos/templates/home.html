@@ -7,9 +7,9 @@
         {% for image in images %}
         <div class="col-sm-12 col-md-6 col-lg-3 ">
 
-            <img src="{{image.image.url}}" class="img-fluid img-thumbnail img-responsive" alt="image" height="300px" width="300px"
-                data-toggle="modal" data-target="#{{image.name}}{{image.id}}">
-                <h6>Category:{{image.image_category}}</h6>
+            <img src="{{image.image.url}}" class="img-fluid img-thumbnail img-responsive" alt="image" height="300px"
+                width="300px" data-toggle="modal" data-target="#{{image.name}}{{image.id}}">
+            <h6>Category:{{image.image_category}}</h6>
         </div>
 
 
@@ -17,10 +17,11 @@
             aria-labelledby="examplemodal" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    
-                    <h2 style="  text-decoration: underline;" class="modal-title text-center" id="modaltitle">{{image.name}}</h2>
+
+                    <h2 style="  text-decoration: underline;" class="modal-title text-center" id="modaltitle">
+                        {{image.name}}</h2>
                     <div class="modal-body text-center">
-                        <img  style="  width:450px;
+                        <img style="  width:450px;
                         height:300px;" src="{{image.image.url}}" alt="" width="450" height="450">
                     </div>
                     <div class="modal-header">
@@ -29,31 +30,33 @@
                         <p>{{image.description}}</p>
 
                     </div>
-                 
+
                     <div class="modal-footer">
 
                         <div class="form-group row">
-                       
-                          
-                      
+
+
+
                             <p>Located in : {{image.image_location}}</p>
 
                             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 padding-1">
-                                <input type="text"  class="form-control w- mx-3" value="{{image.image.url}}" id="myInput">
-                                
+                                <input type="text" class="form-control w- mx-3" value="{{image.image.url}}"
+                                    id="myInput">
+
                             </div>
 
                             <button class="btn btn-sm btn-outline-info" onclick="myFunction()">Copy</button>
 
 
-                        
+
                         </div>
 
 
 
 
                     </div>
-                    <button type="button"  style="background-color: red; color:white;" class="btn btn-sm btn-outline-danger" data-dismiss="modal">Close</button>
+                    <button type="button" style="background-color: red; color:white;"
+                        class="btn btn-sm btn-outline-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -65,13 +68,13 @@
 </div>
 <script>
     function myFunction() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Copied the url: " + copyText.value);
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Copied the url: " + copyText.value);
     }
-    </script>
-    
+</script>
+
 
 
 {% endblock%}
