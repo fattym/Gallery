@@ -1,5 +1,5 @@
 # Tambua Kenya
-
+ <img src="./p.png">
 ## Author
 #### By:
 1. Joseph Nganga ; lead developer
