@@ -8,7 +8,7 @@
 1. Moringa Students ; Assistant designers
 
 ### Description  
-This is an application that enables users to view different categories of images per locations and also able to copy the link and share it to other friends
+This is an application that enables users to view different categories of images per locations and also able to copy the link and share it to other friends.
 
 ### Deployed link
 <a href="https://django-data.herokuapp.com/"> The link</a>
