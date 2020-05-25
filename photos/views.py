@@ -44,8 +44,4 @@ def get_location(request):
    
     return render(request,'all-photos/locations.html',{'all_images':location_result,'category_results':category_results,'locations':locations})
 
-def kenya(request):
-    
-    images = Image.objects.filter( location__name__contains="Kenya" )
-    
-    return render(request, 'mombasa.html', {"images": images})
+
