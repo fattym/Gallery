@@ -43,7 +43,6 @@ class Images(models.Model):
         images_location = cls.objects.filter(image_location_name=location)
         return images_location
 
-    
     def __str__(self):
         return self.name
     
