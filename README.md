@@ -1,7 +1,6 @@
 # Tambua Kenya
  <img src="./p.png">
- 
-## Author
+
 
 #### By:
 1. Joseph Nganga ; lead developer
@@ -12,7 +11,7 @@
 This is an application that enables users to view different categories of images per locations and also able to copy the link and share it to other friends
 
 ### Deployed link
-
+<a href="https://django-data.herokuapp.com/"> The link</a>
 
 ### Setup and Installation  
 To get the project .......  
