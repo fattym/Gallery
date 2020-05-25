@@ -11,9 +11,9 @@ class ImageTestClass(TestCase):
 
     # Set up method
     def setUp(self):
-        self.zuri = Location(locs_name='zuri')
-        self.flowers = Category(name='general')
-        self.image = Image(image='media/rose.jpeg',image_name='rose', image_descprition='best gift you can give to lover',location=self.zuri,category=self.flowers, id=1)
+        self.nairobi = Location(locs_name='nairobi')
+        self.animals = Category(name='general')
+        self.image = Image(image='media/download.jpeg',image_name='animal', image_descprition='best gift you can give to lover',location=self.nairobi,category=self.animals, id=1)
         
 
     def test_instance(self):
@@ -28,7 +28,7 @@ class ImageTestClass(TestCase):
 
 class CategoryTestClass(TestCase):
     def setUp(self):
-        self.category = Category(name = 'flowers', id=1)
+        self.category = Category(name = 'animals', id=1)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.category,Category)) 
@@ -44,8 +44,8 @@ class CategoryTestClass(TestCase):
         self.assertTrue(len(cate) is 0)
         
     def test_display_all(self):
-        flowers = Category(name='general')
-        flowers.save_category()
+        animals = Category(name='general')
+        animals.save_category()
         one = Category.objects.all()
         print(len(one))
         self.assertTrue(len(one),2)
@@ -57,28 +57,28 @@ class CategoryTestClass(TestCase):
 class LocationTestClass(TestCase):
     
     def setUp(self):
-        self.zuri = Location(locs_name = 'zuri', id=1)
+        self.nairobi = Location(locs_name = 'nairobi', id=1)
         
         
     #Testing instance
     
     def test_instance(self):
-        self.assertTrue(isinstance(self.zuri,Location)) 
+        self.assertTrue(isinstance(self.nairobi,Location)) 
 
     def test_save_method(self):
-        self.zuri.save_locs()
+        self.nairobi.save_locs()
         images = Location.objects.all()
         self.assertTrue(len(images)>0)
         
     def test_delete_method(self):
-        self.zuri.delete_locs()
+        self.nairobi.delete_locs()
         locations = Location.objects.all()
         self.assertTrue(len(locations) is 0)
         
     def test_display_all(self):
-        rose= Location(loc_name='zuri')
-        rose.save_loc()
-        self.zuri.save_loc()
+        animal= Location(loc_name='nairobi')
+        animal.save_loc()
+        self.nairobi.save_loc()
         locations = Location.objects.all()
         print(len(locations))
         self.assertTrue(len(locations),2)
