@@ -1,6 +1,7 @@
 
 
 <div class="sidenav">
+    <a class="nav-link text-white" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
     <form class="navbar-form" role="search" action="{% url 'search_results' %}" METHOD="GET">
 
         <div class="input-group">
@@ -12,15 +13,7 @@
         </div>
 
     </form>
-    <a class="nav-link text-white" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
-    <ul class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            {% for location in locations %}
-            <li><a href="{% url 'get_location' location.id %}">{{location.location_name}}</a></li>
-            <li class="divider"></li>
-            {% endfor %}
-        </ul>
-    </ul>
+
+
   </div>
   
