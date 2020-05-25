@@ -13,8 +13,7 @@ This is an application that enables users to view different categories of images
 ### Deployed link
 <a href="https://django-data.herokuapp.com/"> The link</a>
 
-### Setup and Installation  
-To get the project .......  
+
 ### BDD
 | Behavior | Input | Output | 
 | -------- | ----- | ------ |
@@ -22,7 +21,10 @@ To get the project .......
 | Details about the photo | Click on Copy Link | Pop up that shows that the image link has been copied appears | 
 | Details about the photo | Click on View Image | Photo expands | 
 | Search in the search field | Input keywords to be searched then press ENTER | Search page is loaded and displays with the searched results | 
-##### Cloning the repository:  
+
+## Setup and Installation  
+To get the project .......  
+#### Cloning the repository:  
 
 ##### Navigate into the folder and install requirements  
  ```bash 
