@@ -1,5 +1,5 @@
 # Tambua Kenya
-
+ <img src="./p.png">
 ## Author
 #### By:
 1. Joseph Nganga ; lead developer
@@ -15,15 +15,12 @@ This is an application that enables users to view different categories of images
 ### Setup and Installation  
 To get the project .......  
 ### BDD
-
-| Behaviour | Input | Output |
-| --------- | ------| ------ |
-|On loading the app you see the landing page with a navbar at the left| Clicking `search`| You are redirected to the homepage if you had left the page or just loads the homepage again if you are still on the homepage|
-|Clicking the `Locations` link on the navbar | Mouse click |Displays a drop-down menu for `Kisumu`, `Mombasa` and `Nakuru` locations.
-|Clicking the `Kenya`,`kisumu` or `Nakuru`links from the drop-down menu | Mouse click | Redirects a page where you can view various photos from the location that you selected|
-|Clicking the `Today's Images` link | Mouse click | Redirects to a page where you can view images of today|
-|Clicking any image| Mouse click | A modal opens with the details of the image including the image itself.|
-  
+| Behavior | Input | Output | 
+| -------- | ----- | ------ |
+| View all posted photos | click over a photo | Shown details about the photo 
+| Details about the photo | Click on Copy Link | Pop up that shows that the image link has been copied appears | 
+| Details about the photo | Click on View Image | Photo expands | 
+| Search in the search field | Input keywords to be searched then press ENTER | Search page is loaded and displays with the searched results | 
 ##### Cloning the repository:  
 
 ##### Navigate into the folder and install requirements  
