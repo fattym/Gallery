@@ -1,6 +1,8 @@
 # Tambua Kenya
  <img src="./p.png">
+ 
 ## Author
+
 #### By:
 1. Joseph Nganga ; lead developer
 1. Moringa TM's ; Mentors
