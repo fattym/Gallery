@@ -7,7 +7,6 @@ from .views import SearchResultsListView,SearchLocationListView,about
 
 urlpatterns=[
     path('',views.home,name='home'),
-    path('',views.about,name='about'),
     path('search/', SearchResultsListView.as_view(), name='search_results'),
     path('search/', SearchLocationListView, name='search_by_location'),
     
