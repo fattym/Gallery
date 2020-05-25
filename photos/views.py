@@ -12,7 +12,9 @@ def home(request):
     return render(request, "home.html", {"images":images,"category":category})
 
 
-
+def about(request):  
+    category= Category.objects.all()
+    return render(request, "about.html", {"category":category})
 class SearchResultsListView(ListView):
     model = Images
     context_object_name = 'images_list'

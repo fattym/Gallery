@@ -3,10 +3,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from . import views
-from .views import SearchResultsListView,SearchLocationListView
+from .views import SearchResultsListView,SearchLocationListView,about
 
 urlpatterns=[
     path('',views.home,name='home'),
+    path('',views.about,name='about'),
     path('search/', SearchResultsListView.as_view(), name='search_results'),
     path('search/', SearchLocationListView, name='search_by_location'),
     
